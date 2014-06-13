@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/quantec">
-        <file>images/quanton.png</file>
+        <file>images/colibri.png</file>
     </qresource>
 </RCC>

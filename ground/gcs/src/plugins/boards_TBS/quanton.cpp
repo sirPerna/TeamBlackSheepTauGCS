@@ -104,7 +104,7 @@ QStringList Quanton::getSupportedProtocols()
 
 QPixmap Quanton::getBoardPicture()
 {
-    return QPixmap(":/quantec/images/quanton.png");
+    return QPixmap(":/quantec/images/colibri.png");
 }
 
 QString Quanton::getHwUAVO()

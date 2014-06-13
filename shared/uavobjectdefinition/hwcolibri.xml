@@ -1,5 +1,5 @@
 <xml>
-	<object name="HwQuanton" singleinstance="true" settings="true" category="HardwareSettings">
+	<object name="HwColibri" singleinstance="true" settings="true" category="HardwareSettings">
 		<description>Selection of optional hardware configurations.</description>
 
 		<field name="RcvrPort" units="function" type="enum" elements="1" options="Disabled,PWM,PWM+ADC,PPM,PPM+ADC,PPM+PWM,PPM+PWM+ADC,PPM+Outputs,PPM+Outputs+ADC,Outputs,Outputs+ADC" defaultvalue="PWM"/>

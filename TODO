@@ -1,5 +1,5 @@
 These files need copied / moved to “colibri” vs. “quanton” 
-./flight/targets/Quentin
+./flight/targets/quanton
 ./flight/targets/quanton/gdb/bl_quanton
 ./flight/targets/quanton/gdb/quanton
 ./flight/targets/quanton/hw/quanton rev.1.brd

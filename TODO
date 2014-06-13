@@ -1,0 +1,45 @@
+These files need copied / moved to “colibri” vs. “quanton” 
+./flight/targets/Quentin
+./flight/targets/quanton/gdb/bl_quanton
+./flight/targets/quanton/gdb/quanton
+./flight/targets/quanton/hw/quanton rev.1.brd
+./flight/targets/quanton/hw/quanton rev.1.pdf
+./flight/targets/quanton/hw/quanton rev.1.sch
+./ground/gcs/src/plugins/boards_quantec/images/quanton.png
+./ground/gcs/src/plugins/boards_quantec/quanton.cpp
+./ground/gcs/src/plugins/boards_quantec/quanton.h
+./shared/uavobjectdefinition/hwquanton.xml
+
+
+All instances of “quanton” and “Quanton” “QUANTON” need converted to “colibri” or “Colibri” or “COLIBRI” in these files. 
+./flight/targets/quanton/bl/pios_board.c
+./flight/targets/quanton/bl/pios_config.
+./flight/targets/quanton/bl/pios_usb_board_data.c
+./flight/targets/quanton/bl/pios_usb_board_data.h
+./flight/targets/quanton/board-info/board-info.mk
+./flight/targets/quanton/board-info/board_hw_defs.c
+./flight/targets/quanton/board-info/pios_board.h
+./flight/targets/quanton/fw/main.c
+./flight/targets/quanton/fw/Makefile
+./flight/targets/quanton/fw/pios_board.c
+./flight/targets/quanton/fw/pios_config.h
+./flight/targets/quanton/fw/pios_usb_board_data.c
+./flight/targets/quanton/fw/pios_usb_board_data.h
+./flight/targets/quanton/fw/UAVObjects.inc
+./flight/targets/quanton/gdb/bl_quanton
+./flight/targets/quanton/gdb/quanton
+./flight/targets/quanton/target-defs.mk
+./ground/gcs/src/plugins/boards_quantec/boards_quantec.pro
+./ground/gcs/src/plugins/boards_quantec/Quantec.pluginspec
+./ground/gcs/src/plugins/boards_quantec/quantec.qrc
+./ground/gcs/src/plugins/boards_quantec/quantecplugin.cpp
+./ground/gcs/src/plugins/boards_quantec/quanton.cpp
+./ground/gcs/src/plugins/boards_quantec/quanton.h
+./ground/gcs/src/plugins/boards_stm/flyingf4.cpp
+./ground/gcs/src/plugins/uavobjects/uavobjects.pro
+./package/linux/deb_common/taulabs.udev
+./package/Makefile
+./package/osx/package
+./package/winx86/taulabs.nsi
+./shared/uavobjectdefinition/hwquanton.xml
+

@@ -13,6 +13,22 @@
 #
 # I do not specifically condone TauLabs in general, nor do I support 'Quanton' as a body of work. 
 #
+# The MAIN reason I chose to engague in this was the snarky attitude presented by guilhermito when perna asked for help.
+#
+# "Re: New Tiny Hardware
+# by Perna » Mon Apr 07, 2014 1:58 pm
+#
+# I looking for somebody who can help me make a new hardware ID for the 
+# board with an own hardware name and to make the GCS recognize it with a 
+# own picture."
+# 
+# "Re: New Tiny Hardware
+#  by guilhermito » Mon Apr 07, 2014 3:07 pm
+# 
+# Good luck :)"
+#  
+# It just didn't seem very 'Neighborly' see FYN-FYTN protocol https://www.youtube.com/watch?v=TbiMZMd7v4g
+#
 # Tau Labs
 
 ## Goals

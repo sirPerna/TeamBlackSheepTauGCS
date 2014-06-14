@@ -69,7 +69,7 @@ QString Colibri::shortName()
 
 QString Colibri::boardDescription()
 {
-    return QString("colibri flight control rev. 1 by TBS Networks GmbH");
+    return QString("colibri flight control rev. 1 by TBS");
 }
 
 //! Return which capabilities this board has

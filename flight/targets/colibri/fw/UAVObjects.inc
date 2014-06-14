@@ -6,7 +6,7 @@
 # @{
 # @addtogroup 
 # @{
-# @brief Makefile to build UAVObject code for quanton flight control.
+# @brief Makefile to build UAVObject code for colibri flight control.
 ###############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -98,7 +98,7 @@ UAVOBJSRCFILENAMES += velocityactual
 UAVOBJSRCFILENAMES += velocitydesired
 UAVOBJSRCFILENAMES += watchdogstatus
 UAVOBJSRCFILENAMES += flightstatus
-UAVOBJSRCFILENAMES += hwquanton
+UAVOBJSRCFILENAMES += hwcolibri
 UAVOBJSRCFILENAMES += modulesettings
 UAVOBJSRCFILENAMES += receiveractivity
 UAVOBJSRCFILENAMES += cameradesired

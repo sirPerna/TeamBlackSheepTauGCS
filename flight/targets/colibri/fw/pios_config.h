@@ -2,7 +2,7 @@
  ******************************************************************************
  * @addtogroup TauLabsTargets Tau Labs Targets
  * @{
- * @addtogroup Quanton Quanton support files
+ * @addtogroup Colibri Colibri support files
  * @{
  *
  * @file       pios_config.h 

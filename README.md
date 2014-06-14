@@ -1,7 +1,7 @@
 ## OpenPilot is what you *SHOULD* be using. ;)
 
  Colibri is a clone of Quanton which is a clone of Revo which is VERY touchy in the community. 
- In jest even R_Lefebvre chimed in on the Quanton post on DIYDrones - http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A1110560&commentId=705844%3AComment%3A1227209&xg_source=activity
+ In jest even R_Lefebvre chimed in on the concept well before Colibri existed. See the Quanton post on DIYDrones - http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A1110560&commentId=705844%3AComment%3A1227209&xg_source=activity
  "Wow, clone of a clone.  $30.  If somebody makes a clone of a clone of a clone, will it be $3? ;)"
 
  These files are provided out of courtesy to an acquantence that I met while reading about new hardware that would support TauLabs (and OpenPilot by proxy) 

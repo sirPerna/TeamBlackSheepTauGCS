@@ -2,12 +2,12 @@
  ******************************************************************************
  * @addtogroup TauLabsTargets Tau Labs Targets
  * @{
- * @addtogroup Quanton Quanton support files
+ * @addtogroup Colibri Colibri support files
  * @{
  *
- * @file       STM32F4xx_Quanton.c 
+ * @file       STM32F4xx_Colibri.c 
  * @author     Tau Labs, http://taulabs.org, Copyright (C) 2012-2013
- * @brief      Board specific defines for Quanton
+ * @brief      Board specific defines for Colibri
  * @see        The GNU Public License (GPL) Version 3
  * 
  *****************************************************************************/

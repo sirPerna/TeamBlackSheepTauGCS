@@ -2,13 +2,13 @@
  ******************************************************************************
  * @addtogroup TauLabsTargets Tau Labs Targets
  * @{
- * @addtogroup Quanton Quanton support files
+ * @addtogroup Colibri Colibri support files
  * @{
  *
  * @file       board_hw_defs.c 
  * @author     Tau Labs, http://taulabs.org, Copyright (C) 2012-2014
  * @brief      Defines board specific static initializers for hardware for the
- *             Quanton board.
+ *             Colibri board.
  * @see        The GNU Public License (GPL) Version 3
  * 
  *****************************************************************************/

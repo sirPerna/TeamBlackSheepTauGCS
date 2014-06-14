@@ -5,7 +5,7 @@ HW_TYPE             := 0x00		# seems to be unused
 
 MCU                 := cortex-m4
 CHIP                := STM32F405RGT
-BOARD               := STM32F4xx_QUANTON
+BOARD               := STM32F4xx_COLIBRI
 MODEL               := HD
 MODEL_SUFFIX        := 
 

@@ -1,16 +1,8 @@
 ## OpenPilot is what you *SHOULD* be using. ;)
 
- Colibri is a clone of Quanton which is a clone of Revo which is VERY touchy in the community. 
- In jest even R_Lefebvre chimed in on the concept well before Colibri existed. See the Quanton post on DIYDrones - http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A1110560&commentId=705844%3AComment%3A1227209&xg_source=activity
- "Wow, clone of a clone.  $30.  If somebody makes a clone of a clone of a clone, will it be $3? ;)"
-
- These files are provided out of courtesy to an acquantence that I met while reading about new hardware that would support TauLabs (and OpenPilot by proxy) 
- I am doing this patch primarily as an exercise to help me continue my understanding of OpenPilot based software and hardware interactions
-
- This topic originated on the PhoenixPilot Google Group - https://groups.google.com/forum/!topic/phoenixpilot/IK5sjLUFU84
- The "New Tiny Hardware" topic was discussed briefly after which point one of my comments was deleted by the group administrator. 
- Remaining public conversations have been held on the TauLabs forum (which I am banned from) http://forum.taulabs.org/viewtopic.php?f=21&t=94
- Additional relevant notes here https://groups.google.com/forum/#!msg/phoenixpilot/xbcV8DGkznw/a4orL4pIgrYJ
+![Colibri Preview](http://i.imgur.com/ymF4UOS.jpg)
+![Colibri2 Preview](http://i.imgur.com/N6ziuIN.jpg)
+![Colibri3 Preview](http://i.imgur.com/CozeIwj.png)
 
  I do not specifically condone TauLabs in general, nor do I support 'Quanton' as a body of work. 
 
@@ -29,6 +21,18 @@
  Good luck :)"
   
  It just didn't seem very 'Neighborly' see FYN-FYTN protocol https://www.youtube.com/watch?v=TbiMZMd7v4g
+
+ Colibri is a clone of Quanton which is a clone of Revo which is VERY touchy in the community. 
+ In jest even R_Lefebvre chimed in on the concept well before Colibri existed. See the Quanton post on DIYDrones - http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A1110560&commentId=705844%3AComment%3A1227209&xg_source=activity
+ "Wow, clone of a clone.  $30.  If somebody makes a clone of a clone of a clone, will it be $3? ;)"
+
+ These files are provided out of courtesy to an acquantence that I met while reading about new hardware that would support TauLabs (and OpenPilot by proxy) 
+ I am doing this patch primarily as an exercise to help me continue my understanding of OpenPilot based software and hardware interactions
+
+ This topic originated on the PhoenixPilot Google Group - https://groups.google.com/forum/!topic/phoenixpilot/IK5sjLUFU84
+ The "New Tiny Hardware" topic was discussed briefly after which point one of my comments was deleted by the group administrator. 
+ Remaining public conversations have been held on the TauLabs forum (which I am banned from) http://forum.taulabs.org/viewtopic.php?f=21&t=94
+ Additional relevant notes here https://groups.google.com/forum/#!msg/phoenixpilot/xbcV8DGkznw/a4orL4pIgrYJ
 
  Tau Labs
 

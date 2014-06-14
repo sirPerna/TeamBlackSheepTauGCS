@@ -1,4 +1,4 @@
- OpenPilot is what you *SHOULD* be using. ;)
+## OpenPilot is what you *SHOULD* be using. ;)
 
  Colibri is a clone of Quanton which is a clone of Revo which is VERY touchy in the community. 
  In jest even R_Lefebvre chimed in on the Quanton post on DIYDrones - http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A1110560&commentId=705844%3AComment%3A1227209&xg_source=activity

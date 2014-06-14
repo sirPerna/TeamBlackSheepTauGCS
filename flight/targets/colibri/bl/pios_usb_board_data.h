@@ -2,7 +2,7 @@
  ******************************************************************************
  * @addtogroup TauLabsBootloader Tau Labs Bootloaders
  * @{
- * @addtogroup QuantonBL Quanton bootloader
+ * @addtogroup ColibriBL Colibri bootloader
  * @{
  *
  * @file       pios_usb_board_data.h

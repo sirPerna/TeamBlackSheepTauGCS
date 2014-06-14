@@ -1,14 +1,14 @@
 /**
  ******************************************************************************
  *
- * @file       flyingf4.cpp
+ * @file       colibri.cpp
  * @author     Tau Labs, http://taulabs.org, Copyright (C) 2013
  *
  * @addtogroup GCSPlugins GCS Plugins
  * @{
- * @addtogroup Boards_Stm STM boards support Plugin
+ * @addtogroup Boards_TBS TBS boards support Plugin
  * @{
- * @brief Plugin to support boards by STM
+ * @brief Plugin to support boards by TBS
  *****************************************************************************/
 /*
  * This program is free software; you can redistribute it and/or modify
@@ -26,51 +26,54 @@
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include "flyingf4.h"
+#include "colibri.h"
 
 #include <uavobjectmanager.h>
 #include "uavobjectutil/uavobjectutilmanager.h"
 #include <extensionsystem/pluginmanager.h>
 
-#include "hwflyingf4.h"
+#include "hwcolibri.h"
+
 /**
- * @brief FlyingF4::FlyingF4
- *  This is the FlyingF4 board definition
+ * @brief Colibri::Colibri
+ *  This is the Colibri board definition
  */
-FlyingF4::FlyingF4(void)
+Colibri::Colibri(void)
 {
     // Initialize our USB Structure definition here:
     USBInfo board;
-    board.vendorID = 0x20A0;
-    board.productID = 0x415b;
+    board.vendorID = 0x0fda;
+    board.productID = 0x0100;
 
     setUSBInfo(board);
 
-    boardType = 0x84;
+    boardType = 0x86;
 
     // Define the bank of channels that are connected to a given timer
     channelBanks.resize(6);
     channelBanks[0] = QVector<int> () << 1 << 2 << 3 << 4;
-    channelBanks[1] = QVector<int> () << 5 << 6 << 7 << 8;
+    channelBanks[1] = QVector<int> () << 5 << 6;
+    channelBanks[2] = QVector<int> () << 7;
+    channelBanks[3] = QVector<int> () << 8;
 }
 
-FlyingF4::~FlyingF4()
+Colibri::~Colibri()
 {
 
 }
 
-QString FlyingF4::shortName()
+QString Colibri::shortName()
 {
-    return QString("flyingf4");
+    return QString("colibri");
 }
 
-QString FlyingF4::boardDescription()
+QString Colibri::boardDescription()
 {
-    return QString("FlyingF4");
+    return QString("colibri flight control rev. 1 by TBS Networks GmbH");
 }
 
 //! Return which capabilities this board has
-bool FlyingF4::queryCapabilities(BoardCapabilities capability)
+bool Colibri::queryCapabilities(BoardCapabilities capability)
 {
     switch(capability) {
     case BOARD_CAPABILITIES_GYROS:
@@ -89,45 +92,45 @@ bool FlyingF4::queryCapabilities(BoardCapabilities capability)
 
 
 /**
- * @brief FlyingF4::getSupportedProtocols
+ * @brief Colibri::getSupportedProtocols
  *  TODO: this is just a stub, we'll need to extend this a lot with multi protocol support
  * @return
  */
-QStringList FlyingF4::getSupportedProtocols()
+QStringList Colibri::getSupportedProtocols()
 {
 
     return QStringList("uavtalk");
 }
 
-QPixmap FlyingF4::getBoardPicture()
+QPixmap Colibri::getBoardPicture()
 {
-    return QPixmap();
+    return QPixmap(":/TBS/images/colibri.png");
 }
 
-QString FlyingF4::getHwUAVO()
+QString Colibri::getHwUAVO()
 {
-    return "HwFlyingF4";
+    return "HwColibri";
 }
 
-int FlyingF4::queryMaxGyroRate()
+int Colibri::queryMaxGyroRate()
 {
     ExtensionSystem::PluginManager *pm = ExtensionSystem::PluginManager::instance();
     UAVObjectManager *uavoManager = pm->getObject<UAVObjectManager>();
-    HwFlyingF4 *hwFlyingF4 = HwFlyingF4::GetInstance(uavoManager);
-    Q_ASSERT(hwFlyingF4);
-    if (!hwFlyingF4)
+    HwColibri *hwColibri = HwColibri::GetInstance(uavoManager);
+    Q_ASSERT(hwColibri);
+    if (!hwColibri)
         return 0;
 
-    HwFlyingF4::DataFields settings = hwFlyingF4->getData();
+    HwColibri::DataFields settings = hwColibri->getData();
 
     switch(settings.GyroRange) {
-    case HwFlyingF4::GYRORANGE_250:
+    case HwColibri::GYRORANGE_250:
         return 250;
-    case HwFlyingF4::GYRORANGE_500:
+    case HwColibri::GYRORANGE_500:
         return 500;
-    case HwFlyingF4::GYRORANGE_1000:
+    case HwColibri::GYRORANGE_1000:
         return 1000;
-    case HwFlyingF4::GYRORANGE_2000:
+    case HwColibri::GYRORANGE_2000:
         return 2000;
     default:
         return 500;

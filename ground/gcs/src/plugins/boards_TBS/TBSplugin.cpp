@@ -1,14 +1,14 @@
 /**
  ******************************************************************************
  *
- * @file       quantecplugin.h
+ * @file       colibriplugin.h
  * @author     Tau Labs, http://taulabs.org, Copyright (C) 2013
  *
  * @addtogroup GCSPlugins GCS Plugins
  * @{
- * @addtogroup Boards_Quantec Quantec boards support Plugin
+ * @addtogroup Boards_TBS TBS boards support Plugin
  * @{
- * @brief Plugin to support boards by Quantec Networks GmbH
+ * @brief Plugin to support boards by TBS
  *****************************************************************************/
 /*
  * This program is free software; you can redistribute it and/or modify
@@ -25,24 +25,41 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#ifndef QUANTECPLUGIN_H
-#define QUANTECPLUGIN_H
 
-#include <extensionsystem/iplugin.h>
+#include "colibriplugin.h"
+#include "colibri.h"
+#include <QtPlugin>
 
-class QuantecPlugin : public ExtensionSystem::IPlugin
+
+TBSPlugin::TBSPlugin()
 {
-    Q_OBJECT
-    Q_PLUGIN_METADATA(IID "TauLabs.plugins.Quantec" FILE "Quantec.json")
+   // Do nothing
+}
 
-public:
-   QuantecPlugin();
-   ~QuantecPlugin();
+TBSPlugin::~TBSPlugin()
+{
+   // Do nothing
+}
 
-   void extensionsInitialized();
-   bool initialize(const QStringList & arguments, QString * errorString);
-   void shutdown();
+bool TBSPlugin::initialize(const QStringList& args, QString *errMsg)
+{
+   Q_UNUSED(args);
+   Q_UNUSED(errMsg);
+   return true;
+}
 
-};
+void TBSPlugin::extensionsInitialized()
+{
+    /**
+     * Create the board objects here.
+     *
+     */
+    Colibri* colibri = new Colibri();
+    addAutoReleasedObject(colibri);
 
-#endif // QUANTECPLUGIN_H
+}
+
+void TBSPlugin::shutdown()
+{
+}
+

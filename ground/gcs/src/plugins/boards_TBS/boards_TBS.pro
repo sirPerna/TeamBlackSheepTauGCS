@@ -1,18 +1,18 @@
 TEMPLATE = lib
-TARGET = Quantec
+TARGET = TBS
 include(../../taulabsgcsplugin.pri)
 include(../../plugins/uavobjects/uavobjects.pri)
 include(../../plugins/coreplugin/coreplugin.pri)
 
-OTHER_FILES += Quantec.pluginspec
+OTHER_FILES += TBS.pluginspec
 
 HEADERS += \
-    quantecplugin.h \
-    quanton.h
+    TBSplugin.h \
+    colibri.h
 
 SOURCES += \
-    quantecplugin.cpp \
-    quanton.cpp
+    TBSplugin.cpp \
+    colibri.cpp
 
 RESOURCES += \
-    quantec.qrc
+    TBS.qrc

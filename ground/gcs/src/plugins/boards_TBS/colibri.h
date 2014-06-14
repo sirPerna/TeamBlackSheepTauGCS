@@ -1,14 +1,14 @@
 /**
  ******************************************************************************
  *
- * @file       quantecplugin.h
+ * @file       colibri.h
  * @author     Tau Labs, http://taulabs.org, Copyright (C) 2013
  *
  * @addtogroup GCSPlugins GCS Plugins
  * @{
- * @addtogroup Boards_Quantec Quantec boards support Plugin
+ * @addtogroup Boards_TBS TBS boards support Plugin
  * @{
- * @brief Plugin to support boards by Quantec
+ * @brief Plugin to support boards by Team Black Sheep
  *****************************************************************************/
 /*
  * This program is free software; you can redistribute it and/or modify
@@ -25,41 +25,27 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
+#ifndef COLIBRI_H
+#define COLIBRI_H
 
-#include "quantecplugin.h"
-#include "quanton.h"
-#include <QtPlugin>
+#include <coreplugin/iboardtype.h>
 
+class IBoardType;
 
-QuantecPlugin::QuantecPlugin()
+class Colibri : public Core::IBoardType
 {
-   // Do nothing
-}
+public:
+    Colibri();
+    virtual ~Colibri();
 
-QuantecPlugin::~QuantecPlugin()
-{
-   // Do nothing
-}
+    virtual QString shortName();
+    virtual QString boardDescription();
+    virtual bool queryCapabilities(BoardCapabilities capability);
+    virtual QStringList getSupportedProtocols();
+    virtual QPixmap getBoardPicture();
+    virtual QString getHwUAVO();
+    virtual int queryMaxGyroRate();
+};
 
-bool QuantecPlugin::initialize(const QStringList& args, QString *errMsg)
-{
-   Q_UNUSED(args);
-   Q_UNUSED(errMsg);
-   return true;
-}
 
-void QuantecPlugin::extensionsInitialized()
-{
-    /**
-     * Create the board objects here.
-     *
-     */
-    Quanton* quanton = new Quanton();
-    addAutoReleasedObject(quanton);
-
-}
-
-void QuantecPlugin::shutdown()
-{
-}
-
+#endif // COLIBRI_H

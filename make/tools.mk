@@ -533,7 +533,7 @@ endif
 
 # OPENSSL download URL
 ifdef WINDOWS
-  openssl_install: OPENSSL_URL  := http://slproweb.com/download/Win32OpenSSL-1_0_1g.exe
+  openssl_install: OPENSSL_URL  := http://code.x2go.org/releases/binary-win32/3rd-party/Win32OpenSSL/Win32OpenSSL-1_0_1g.exe
   
 openssl_install: OPENSSL_FILE := $(notdir $(OPENSSL_URL))
 OPENSSL_DIR = $(TOOLS_DIR)/win32openssl

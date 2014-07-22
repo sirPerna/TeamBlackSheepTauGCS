@@ -1,10 +1,7 @@
-## OpenPilot is what you *SHOULD* be using. ;)
+## Per Kevin Finisterre (not TBS) OpenPilot is what you *SHOULD* be using. ;)
 
-![Colibri Preview](http://i.imgur.com/ymF4UOS.jpg)
-![Colibri2 Preview](http://i.imgur.com/N6ziuIN.jpg)
-![Colibri3 Preview](http://i.imgur.com/CozeIwj.png)
-
- I do not specifically condone TauLabs in general, nor do I support 'Quanton' as a body of work. 
+ I (Kevin Finisterre) do not specifically condone TauLabs in general, nor do I support 'Quanton' as a body of work. 
+ (This has NOTHING to with Team Black Sheep or sirperna at ALL, as I am NOT affiliated with them)
 
  The MAIN reason I chose to engague in this was the snarky attitude presented by guilhermito when perna asked for help.
 
@@ -21,6 +18,11 @@
  Good luck :)"
   
  It just didn't seem very 'Neighborly' see FYN-FYTN protocol https://www.youtube.com/watch?v=TbiMZMd7v4g
+
+![Colibri Preview](http://i.imgur.com/ymF4UOS.jpg)
+![Colibri2 Preview](http://i.imgur.com/N6ziuIN.jpg)
+![Colibri3 Preview](http://i.imgur.com/CozeIwj.png)
+
 
  Colibri is a clone of Quanton which is a clone of Revo which is VERY touchy in the community. 
  In jest even R_Lefebvre chimed in on the concept well before Colibri existed. See the Quanton post on DIYDrones - http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A1110560&commentId=705844%3AComment%3A1227209&xg_source=activity
